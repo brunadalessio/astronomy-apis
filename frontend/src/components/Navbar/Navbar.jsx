@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <nav className="nav-container">
-      <h1 className="nav-title">Astro Explore</h1>
+      <h1 className="nav-title">Astro</h1>
       <div className="nav-links">
         <NavLink
           to="/"
