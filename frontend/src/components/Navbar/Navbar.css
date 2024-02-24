@@ -1,0 +1,33 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #03045e; /* Azul escuro */
+    padding: 1em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav-title {
+    color: #ffffff; /* Branco */
+    font-size: 1.8em;
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #ffffff; /* Branco */
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffa600; /* Laranja */
+  }
+  
