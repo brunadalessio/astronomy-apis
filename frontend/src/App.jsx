@@ -1,4 +1,3 @@
-// App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import StarObservatory from './pages/StarObservatory';
@@ -12,7 +11,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/observatory" element={<StarObservatory />} />
       </Routes>
-    </Router>
+  </Router>
   );
 };
 
