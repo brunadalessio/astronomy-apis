@@ -39,6 +39,17 @@ app.get('/sky', async (req, res) => {
     }
 });
 
+app.get('/news', async(req, res) => {
+    try{
+        const response = await axios.get('https://api.spaceflightnewsapi.net/v4/articles');
+        const responseData = response.data;
+        res.json(responseData);
+    } catch(error){
+        console.error(error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
